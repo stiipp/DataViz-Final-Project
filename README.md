@@ -23,16 +23,30 @@ This project examines the **Maternal Mortality Ratio (MMR)**—the number of mat
 | Time Period | 1985-2023 (39 years) |
 | MMR Range | 1 - 8,045 |
 | Mean MMR | 229 |
-| Median MMR | 89 |
+| Median MMR | 68 |
 
 ## 📈 Visualizations Included
 
+### Exploratory Data Analysis (EDA)
 1. **MMR Distribution Histogram** - Right-skewed distribution with SDG target reference line
 2. **Global Trend Line Chart** - 39-year decline in average maternal mortality
-3. **Animated Choropleth Map** - Geographic visualization of MMR by country over time
-4. **Regional Heatmap** - 5-year interval comparison across World Bank regions
-5. **Income Group Box Plot** - Relationship between economic development and maternal outcomes
-6. **Success Stories Line Chart** - Countries achieving greatest absolute MMR reductions
+3. **Income Group Box Plot** - Relationship between economic development and maternal outcomes
+
+### Main Visualizations
+4. **Animated Choropleth Map** - Geographic visualization of MMR by country over time
+5. **Regional Heatmap** - 5-year interval comparison across World Bank regions
+6. **MMR Reduction Scatter Plot** - Baseline MMR vs. percentage reduction by country
+7. **Success Stories Line Chart** - Countries achieving greatest absolute MMR reductions
+
+## 🌍 Regions Analyzed
+
+- Middle East, North Africa, Afghanistan & Pakistan
+- Sub-Saharan Africa
+- Latin America & Caribbean
+- Europe & Central Asia
+- East Asia & Pacific
+- South Asia
+- North America
 
 ## 🛠️ Setup Instructions
 
@@ -70,17 +84,6 @@ This project examines the **Maternal Mortality Ratio (MMR)**—the number of mat
     pip install pandas matplotlib seaborn numpy plotly jupyter
     ```
 
-    Or install packages individually:
-
-    ```bash
-    pip install pandas
-    pip install matplotlib
-    pip install seaborn
-    pip install numpy
-    pip install plotly
-    pip install jupyter
-    ```
-
 ### Required Libraries
 
 | Library | Version | Purpose |
@@ -114,22 +117,6 @@ This project examines the **Maternal Mortality Ratio (MMR)**—the number of mat
     - **Option 2**: Use `Cell` → `Run All` from the Jupyter menu
     - **Option 3**: In VS Code, click `Run All` at the top of the notebook
 
-### Troubleshooting
-
-#### Issue: ModuleNotFoundError
-
-```bash
-# Ensure virtual environment is activated
-# Windows:
-venv\Scripts\activate
-
-# macOS/Linux:
-source venv/bin/activate
-
-# Reinstall missing package
-pip install <package-name>
-```
-
 ## 📋 Dataset Description
 
 ### File: `MMR_with_region_income.csv`
@@ -149,9 +136,9 @@ pip install <package-name>
 
 | Metric | Value |
 |--------|-------|
-| Required Annual Reduction Rate | 7.5% per year |
-| Current Annual Reduction Rate | 2.9% per year |
-| Progress Gap | ~40% of required pace |
+| Current Global Average (2023) | 115 |
+| SDG Target | 70 |
+| Gap Remaining | 45 deaths per 100,000 |
 
 ## 👥 Authors
 
@@ -173,4 +160,3 @@ This project is for educational purposes.
 ---
 
 *"No woman should die giving life."* — UNFPA
-
